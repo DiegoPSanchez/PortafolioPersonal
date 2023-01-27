@@ -1,0 +1,274 @@
+/* Clases generales */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.seccion-oscura{
+    height: 400px;
+    text-align: center;
+    background-color:rgb(4, 4, 46);
+    font-size:1.2rem;
+    color: white;
+}
+.titulo-principal{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+/* Barra de navegacion */
+.navbar{
+    padding:2rem;
+}
+
+.navbar-collapse{
+align-items: center;
+justify-content: space-between;
+}
+
+.hero .titulo-principal{
+    font-size:2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+    padding: 20px;
+}
+/* Sobre mi */
+.sobre-mi{
+    max-width: 800px;
+    padding: 100px;
+}
+
+/* Experiencia laboral */
+
+.experienciaImagen{
+    font-size: 2.5rem;
+    background-color:rgb(4, 4, 46);
+    color:rgb(0, 255, 26);
+    border-radius: 50%;
+    width: 50px;
+    padding: 8px 19px;
+}
+.column{
+    padding: 50px;
+    border: 2px solid;
+    border-color: gray;
+    transition: all 0.2s ease-in;
+}
+
+.column:hover{
+    color:white;
+    background-color:rgb(4, 4, 46);
+}
+.card-title{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.badge{
+
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    color:white;
+    background-color: blue;
+}
+
+/* Proyectos */
+.proyecto{
+    padding: 10px;
+    position: relative;
+}
+.proyecto img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.2s ease;
+}
+.proyecto-contenedor {
+    padding: 40px;
+    margin-bottom: 40px;
+
+}
+.overlay{
+    transition:all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.overlay i {
+    color: black;
+    font-size:60px;
+    margin: 10px;
+}
+.proyecto:hover img{
+    opacity: 0.2;
+}
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+/* Articulos */
+.articulos{
+    padding: 30px;
+}
+.masArticulos{
+    margin: 40px;
+}
+.card-header{
+    font-size:1.2rem;
+    font-weight: bold;
+}
+/* Testimonios */
+.testimonios{
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios h3{
+    font-family: 'Rowdies', cursive;
+}
+
+.testimonios .carousel{
+
+    text-align: center;
+}
+.carousel-item {
+    height: 500px;
+}
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+    
+}
+.testimonioImg{
+    height:150px;
+    width: 150px;
+    margin:10px 10px 20px 10px;
+
+}
+.testimonio-cliente{
+    max-width: 70%;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+}
+
+.cliente{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.cargo{
+    font-size:1.2rem;
+    font-weight: bold; 
+    color:#656060;
+}
+/* Contacto */
+.seccion-contacto{
+    height: 150px;
+    text-align: center;
+    background-color:rgb(4, 4, 46);
+}
+
+.contacto{
+    color: white;
+    display:flex;
+    text-align:center;
+    justify-content:space-evenly;
+    align-items:center;
+    max-width: 800px;
+    min-height: 200px;
+    margin-top:-5rem;
+    background-color: rgb(13, 110, 253);
+    box-shadow:  0px 1px 4px 1px white;
+    border-radius: 10px;
+}
+.contacto .descripcion{
+    font-size:1.2rem;
+    margin:10px;
+    font-family: 'Rowdies', cursive;
+}
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin:10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button i{
+    color: white;
+    font-size:1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+.contacto button:hover i{
+    color: black;
+}
+/* Footer */
+.piePagina{
+    padding: 20px 40px 30px 40px;
+    height: 400px;
+    align-items: center;
+}
+
+.footerImg{
+    height:80px; 
+    margin:15px;
+}
+
+.iconos-redes a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width: 50px;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes a:hover{
+    background-color: white;
+    border: 2px solid blue;
+}
+.iconos-redes a:hover i{
+    color: black;
+}
+
+/* Mediaqueries */
+@media screen and (min-width: 900px) {
+    .hero-imagen {
+      max-width: 800px;
+    }
+  }
